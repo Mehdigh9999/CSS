@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SaaS Pricing</title>
+    <style>
+      /* 🔹 Reset Default Styles */
+      body {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        width: 80%;
+        max-width: 900px;
+      }
+
+      .container > div {
+        flex: 1;
+        text-align: center;
+        background-color: purple;
+        margin: 20px;
+        padding: 30px;
+        border-radius: 10px;
+      }
+
+      h2 {
+        margin: 10px 0;
+      }
+
+      p {
+        font-size: larger;
+        color: lightgray;
+      }
+
+      /* Mobile Fix */
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+          align-items: center;
+        }
+        .container > div {
+          width: 100%;
+          max-width: 400px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="pricing-card">
+        <h4>Basic</h4>
+        <h2>$0</h2>
+        <p>Perfect for beginners.</p>
+      </div>
+      <div class="pricing-card">
+        <h4>Pro</h4>
+        <h2>$6.67</h2>
+        <p>Advanced features for professionals.</p>
+      </div>
+      <div class="pricing-card">
+        <h4>Enterprise</h4>
+        <h2>Coming Soon</h2>
+        <p>For large businesses.</p>
+      </div>
+    </div>
+  </body>
+</html>
